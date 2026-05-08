@@ -1,21 +1,21 @@
 ---
-name: design-system-v1
+
+## name: design-system-v1
+
 source_file: Design System v1
-source_page: Cover
-generated_at: 2026-04-29T15:26:24.399Z
----
 
 # Design System v1 Design Guidelines
 
 ## Source
+
 - Figma file: Design System v1
-- Figma page: Cover
-- Extracted at: 2026-04-29T15:26:24.399Z
 
 ## Variable Collections
+
 - No local variable collections found.
 
 ## Color Tokens
+
 - Black: #000000
 - White: #FFFFFF
 - Grayscale (Navy)/900: #011835
@@ -56,52 +56,135 @@ generated_at: 2026-04-29T15:26:24.399Z
 - Peach/400: #FFB293
 - Peach/300: #FFC7A8
 - Peach/200: #FFDEC5
+- Peach/100: #FFF0E2
+- Peach/50: #FFF7F0
+- Sunflower/900: #7A5318
+- Sunflower/800: #936C29
+- Sunflower/700: #B78F41
+- Sunflower/600: #DBB45F
+- Sunflower/500: #FFDC82
+- Sunflower/400: #FFE7A1
+- Sunflower/300: #FFEEB3
+- Sunflower/200: #FFF5CD
+- Sunflower/100: #FFFAE6
+- Sunflower/50: #FFFEFA
+- Lime/900: #277A1B
+- Lime/800: #41932C
+- Lime/700: #63B747
+- Lime/600: #8BDB67
+- Lime/500: #B8FF8D
+- Lime/400: #CEFFA9
+- Lime/300: #DCFFBA
+- Lime/200: #EAFFD1
+- Lime/100: #F6FFE8
+- Lime/50: #FBFFF5
+- Green/900: #064E3B
+- Green/800: #065F46
+- Green/700: #047857
+- Green/600: #059669
+- Green/500: #10B981
+- Green/400: #34D399
+- Green/300: #6EE7B7
+- Green/200: #A7F3D0
+- Green/100: #E6FAF0
+- Green/50: #F7FFFB
+- Oat/900: #F4EDE1
+- Oat/800: #FAF7F0
+- Sky/900: #64C4FF
+- Sky/800: #88D0FF
 
 ## Typography Tokens
-- Heading 2XL Bold: Rza Semibold, 56px / 120%, tracking -3%
-- Heading XL Bold: Rza Semibold, 40px / 120%, tracking -3%
-- Heading L Bold: Rza Semibold, 32px / 120%, tracking -3%
-- Heading M Bold: Rza Semibold, 24px / 125%, tracking -3%
-- Heading S Bold: Rza Semibold, 20px / 125%, tracking -3%
-- Heading XS Bold: Rza Semibold, 16px / 130%, tracking -3%
-- Text L: Gordita Regular, 20px / 130%, tracking 0px
-- Text L Bold: Gordita Medium, 20px / 130%, tracking 0px
-- Text M: Gordita Regular, 16px / 130%, tracking 0px
-- Text M Bold: Gordita Medium, 16px / 130%, tracking 0px
-- Text S: Gordita Regular, 13px / 130%, tracking 0px
-- Text S Bold: Gordita Medium, 13px / 130%, tracking 0px
-- Eyebrow M Bold: Gordita Bold, 13px / 130%, tracking 5%
-- Eyebrow S Bold: Gordita Bold, 10px / 130%, tracking 5%
-- Body M: Gordita Regular, 16px / 160%, tracking 0px
-- Body M Link: Gordita Regular, 16px / 160%, tracking 0px
-- Body M Bold: Gordita Medium, 16px / 160%, tracking 0px
-- Body M Link Bold: Gordita Medium, 16px / 160%, tracking 0px
-- Body S: Gordita Regular, 13px / 160%, tracking 0px
-- Body S Link: Gordita Regular, 13px / 160%, tracking 0px
-- Body S Bold: Gordita Medium, 13px / 160%, tracking 0px
-- Body S Link Bold: Gordita Medium, 13px / 160%, tracking 0px
-- Hint: Gordita Regular, 11px / 130%, tracking 0px
-- Hint Bold: Gordita Medium, 11px / 130%, tracking 0px
+
+### Fonts
+
+- **Display & Headings**: Rza Semibold
+- **Body & UI**: Gordita (Regular for default, Medium for emphasis)
+
+### Scale (12 styles)
+
+Line-heights are specified in **pixels**, not percent. Every line-box is a multiple of 4px, and seven of nine sizes land on the 8px grid. This guarantees that stacked rows, padded containers, and multi-line text blocks all snap to the spacing system.
+
+#### Headings (Rza Semibold)
+
+- Display: Rza Semibold, 56px / 64px line-height, tracking -3%
+- Heading/L: Rza Semibold, 32px / 40px line-height, tracking -2%
+- Heading/M: Rza Semibold, 24px / 32px line-height, tracking -1.5%
+- Heading/S: Rza Semibold, 18px / 24px line-height, tracking -0.5%
+
+#### Body & UI (Gordita)
+
+- Body: Gordita Regular, 16px / 24px line-height, tracking 0
+- Body Bold: Gordita Medium, 16px / 24px line-height, tracking 0
+- Label: Gordita Regular, 16px / 20px line-height, tracking 0
+- Label Bold: Gordita Medium, 16px / 20px line-height, tracking 0
+- Caption: Gordita Regular, 13px / 20px line-height, tracking 0
+- Caption Bold: Gordita Medium, 13px / 20px line-height, tracking 0
+- Eyebrow: Gordita Bold, 13px / 16px line-height, tracking +8%
+- Micro: Gordita Regular, 11px / 16px line-height, tracking 0
 
 ## Spacing Tokens
-- No spacing variables found.
+
+### Principles
+
+- Use **multiples of 4px or 8px** for layout and components: apply to typography rhythm, buttons, gaps, padding, margins, and fixed dimensions unless a documented exception exists.
+- Prefer **steps from the scale** below instead of arbitrary pixel values so UI stays aligned with the same system as [Typography](#typography-tokens) line-heights and the [grid](#grid-styles) gutters.
+
+### Scale (step → px)
+
+
+| Step | Size  |
+| ---- | ----- |
+| 1    | 4px   |
+| 2    | 8px   |
+| 3    | 12px  |
+| 4    | 16px  |
+| 5    | 20px  |
+| 6    | 24px  |
+| 7    | 32px  |
+| 8    | 40px  |
+| 9    | 48px  |
+| 10   | 56px  |
+| 11   | 64px  |
+| 12   | 80px  |
+| 13   | 120px |
+
+
+Steps 1–6 advance in **4px** increments; larger steps mix **8px** multiples (e.g. 32, 40, 48 … 120) for section-level rhythm.
+
+### Usage
+
+- **Component density:** tight stacks and icon gaps often use 1–4 (`4px`–`16px`); form field gaps and card padding often use 4–7 (`16px`–`32px`).
+- **Section spacing:** vertical rhythm between major blocks may use 7–13 (`32px`–`120px`) depending on breakpoint.
 
 ## Radius Tokens
-- No radius variables found.
+
+Use these corner radii for web and mobile surfaces.
+
+
+| Step (label) | Radius |
+| ------------ | ------ |
+| 1            | 4px    |
+| 2            | 8px    |
+| 3            | 12px   |
+| 4            | 16px   |
+| 5            | 24px   |
+
+
+**Usage:** chips, inputs, and small controls often use 1–2 (`4px`–`8px`); cards and modals often use 3-4 (`12px`–`16px`); large marketing tiles or hero blocks may use 5 (`24px`). These names are for **border radius** only; [Effect Styles](#effect-styles) (Small, Medium, Large, …) describe **shadows**, not corner radius.
 
 ## Motion Tokens
+
 - No motion variables found.
 
 ## Effect Styles
+
 - Small: drop_shadow 4px offset 0 2 #2127301F
 - Medium: drop_shadow 8px offset 0 4 #2127301F
 - Large: drop_shadow 20px offset 0 8 #2127301F
 - Extra Large: drop_shadow 32px offset 0 16 #21273033
-- Border Shadow: drop_shadow 0px offset 0 0 #0000000F + drop_shadow 2px offset 0 1 #0000000F + ...
-- UI/Shadow-Border: drop_shadow 0px offset 0 0 #0000000F + drop_shadow 2px offset 0 1 #0000000F + ...
-- UI/Shadow-Border-Hover: drop_shadow 0px offset 0 0 #0000001A + drop_shadow 2px offset 0 1 #0000001A + ...
 
 ## Grid Styles
+
 - Marketing/Desktop: columns count 12, section auto, gutter 32px, align stretch
 - Marketing/Tablet: columns count 8, section auto, gutter 28px, align stretch
 - Marketing/Mobile: columns count 2, section auto, gutter 24px, align stretch
@@ -110,9 +193,12 @@ generated_at: 2026-04-29T15:26:24.399Z
 - Unified Experience/Mobile: columns count 2, section auto, gutter 20px, align stretch
 
 ## Component Families
+
 - No components were found on the current page. Add component sets to improve guideline coverage.
 
 ## Editing Notes
+
 - Refine this file after extraction to add brand context and rationale.
 - Keep token names synchronized with Figma styles and variables.
 - Add usage examples and anti-patterns for critical components.
+
